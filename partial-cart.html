@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <style type="text/css">
+    #input {
+      width: 100%;
+      height: 30vh;
+    }
+  </style>
+  <script type="text/javascript">
+    const checkout = () => {
+      document.querySelector("#output").value = NaN;
+    }
+  </script>
+</head>
+
+<body>
+
+  <div>
+    <label for="input">INPUT:</label>
+    <textarea id="input"></textarea>
+  </div>
+
+  <div>
+    <label>OUTPUT:</label><input id="output" disabled placeholder="0.00"></input>
+  </div>
+
+  <div>
+    <button onclick="checkout()">CHECKOUT</button>
+  </div>
+
+  <pre>
+- Enter the required input data for the question in the `INPUT` field. click `CHECKOUT` to display result at `OUTPUT`
+- On the basis of the above requirements, you can change, split and beautify the file as you like.
+- No third-party libraries can be used, except for unit test libraries
+</pre>
+
+</body>
+
+</html>
